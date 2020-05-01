@@ -1,6 +1,6 @@
 -----------------IN GITLAB SITE : BROWSER----------------------------------------------------------------
 1. Go to <MAIN REPO> for EG: "https://WWW.GITLAB.COM/<BATCH_OWNER_ID>/Review-Management-System"
-2. In the dash board using a find a button called "FORK" click and it will redirect to the page 
+2. In the dash board you can find a button called "FORK" click and it will redirect to the page 
 3. On that page choose your account 
 4. you can find the <FORKED REPO> of <MAIN REPO> in your account
 
