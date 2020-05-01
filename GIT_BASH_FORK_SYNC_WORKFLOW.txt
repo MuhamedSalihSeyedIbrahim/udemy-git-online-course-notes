@@ -1,0 +1,136 @@
+-----------------IN GITLAB SITE : BROWSER----------------------------------------------------------------
+1. Go to <MAIN REPO> for EG: "https://WWW.GITLAB.COM/<BATCH_OWNER_ID>/Review-Management-System"
+2. In the dash board using a find a button called "FORK" click and it will redirect to the page 
+3. On that page choose your account 
+4. you can find the <FORKED REPO> of <MAIN REPO> in your account
+
+
+------------------IN PC/LAP--------------------------------
+
+-----------------Git Global Configuration------------------
+5.git config --global user.name "enter USER_NAME"
+6.git config --global user.email "enter EMAIL_ID"
+
+NOTE:
+EMAIL_ID & NAME should not be EMP NO. 
+USE ONLY NAME & your name EMAIL_ID. 
+TO avoid issues.
+
+IF you already done and its working fine leave the above NOTE and proceed.
+
+-----------------------------------------------------------
+
+----------------INITIAL CLONING--------------------------------------------------------------------
+7. create a empty folder in ur lap generally named "WORKSPACE" & open the folder
+8. right click -> gitbash here
+9. git clone <FORKED REPO URL>
+    EG: 
+        URL: https://WWW.GITLAB.COM/<YOUR_ID>/Review-Management-System
+
+NOTE: <FORKED REPO URL> is in your gitlab account under project or contributed project
+      as <FORKED REPO>.It's dashboard has the git link
+
+10. once cloning is done successfully it have cloned project. 
+    use CD <cloned repo name> to direct in / inside the cloned repo  right click -> gitbash here.
+
+NOTE : From here on. For any git command try to use the gitbash of root folder 
+       Ie. repo opened then right click -> gitbash here.
+----------------------------------------------------------------------------------------------------
+
+-------------------------GIT UPSTREAM ADDING ACTIVTY------------------------------------------------
+11. git remote add upstream <MAIN REPO URL>
+    EG: 
+        URL: "https://WWW.GITLAB.COM/<BATCH_OWNER_ID>/Review-Management-System"
+
+NOTE: <MAIN REPO URL> is in the gitlab account of main project owner / groups under projects
+      as <FORKED REPO>.It's dashboard has the git link
+
+12. git remote -v 
+
+NOTE: Your UPSTREAM URL you have added earlier is present in output of command with FETCH and PUSH key words
+---------------------------------------------------------------------------------------------------- 
+
+-----------------------------------SYNCING PHASE----------------------------------------------------
+
+
+13. git fetch upstream && git checkout master && git merge upstream/master && git push -f origin master
+
+NOTE:
+The above command is used to sync your code with the MAIN REPO and FORKED REPO
+
+WHY SYNC?
+FORK= COPY 
+You were working in a copy of MAIN REPO 
+You add your new feature and push it will reside to your FORKED REPO
+Now you are supposed to add feature in MAIN REPO. you will create the merge request
+Once the feature is merged the data of MAIN REPO gets updated
+But it will not update the FORKED REPO of your colleague, every one must SYNC the code to get updated code
+
+GOAL:
+Work with latest update
+To avoid merge conflicts(Large)
+To get SYNC with every one
+
+WHEN TO SYNC/GOOD PRACTICE:
+We should sync whenever we start working.
+Always communicate with your team mate one your merge request is merged with MAIN REPO update the team
+and vice versa
+Before pushing the code to your FORKED REPO & MAIN
+
+WHAT TO AVOID:
+Avoid working in same file (Team communication needed)
+sync and not resolving merge conflict
+
+
+----------------------------------------------------------------------------------------------------
+
+
+----------------------------------WORKING PHASE------------------------------------------------------
+14. Do your project work <Coding> & after finishing your chunk of work
+15. in the root folder git bash run the command
+
+16. git status 
+NOTE:
+You can find all changes you made in the bash screen in red color / nomal colors
+
+17. Now you have to stage it by add command in same git bash ie.
+18. git add <FOLDER_NAME or FOLDER_NAME/FILE_NAME or . >
+NOTE :
+Generally dot "." on root folder bash will stage all the changes
+Now you can do step 16 &
+verify every red colored file or folder changed to green that mean every thing is staged.
+
+TERM:
+
+STAGE       -> stable not saved by git permanently
+UNSTAGED    -> changed not saved by git permanently
+
+19. Now run commit to save all staged changes 
+20. git commit -m "ENTER MEANING FULL MESSAGE"
+
+21. push your saved chunk of work to your FORKED REPO
+22. git push origin master
+
+----------------------------------------------------------------------------------------------------
+
+23 . SYNC your code using SYNC PHASE STEP from 13 to sync with latest code 
+
+NOTE: IF You find local merge conflict resolve it localy commit it and the push to FORKED REPO then proceed with
+MERGED REQUEST CREATION PHASE
+
+-----------------IN GITLAB SITE : BROWSER----------------------------------------------------------------
+
+--------------------------MERGED REQUEST CREATION PHASE-------------------------------------------------
+
+24. Go to <MAIN REPO> for EG: "https://WWW.GITLAB.COM/<BATCH_OWNER_ID>/Review-Management-System"
+25. Go to the dashboard and on left merge requests is there click that
+26.choose source option as master and click continue
+27.The finally submit
+
+
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+
+
+FOR ANY 
