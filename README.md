@@ -1,2 +1,8 @@
-The Git Started With Github Online Course provided by udemy completed by (ME) MUHAMED SALIH SI on 14 jan,2018
+The Git Started With Github Online Course provided by udemy completed for practising GIT Command is done on 14 jan,2018
 UDEMY_THE_GIT_STARTED_WITH_GITHUB_ONLINE_COURSE_NOTES
+CONSIST OF :
+BASIC GIT TERMINOLOGIES
+BASIC PULL PUSH WORK FLOW
+BASIC SYNC FORK WORK FLOW
+ORGIN URL CHANGING 
+
