@@ -3,7 +3,7 @@
 2. In the dash board you can find a button called "FORK" click and it will redirect to the page 
 3. On that page choose your account 
 4. you can find the <FORKED REPO> of <MAIN REPO> in your account
-
+--------------------------------------------------------------------------
 
 ------------------IN PC/LAP--------------------------------
 
@@ -16,12 +16,12 @@ EMAIL_ID & NAME should not be EMP NO.
 USE ONLY NAME & your name EMAIL_ID. 
 TO avoid issues.
 
-IF you already done and its working fine leave the above NOTE and proceed.
+IF you already done and its working fine leave the above NOTE and PROCEED.
 
 -----------------------------------------------------------
 
 ----------------INITIAL CLONING--------------------------------------------------------------------
-7. create a empty folder in ur lap generally named "WORKSPACE" & open the folder
+7. create a empty folder in your lap --->generally named "WORKSPACE"<--- & open the folder
 8. right click -> gitbash here
 9. git clone <FORKED REPO URL>
     EG: 
@@ -124,11 +124,16 @@ MERGED REQUEST CREATION PHASE
 
 24. Go to <MAIN REPO> for EG: "https://WWW.GITLAB.COM/<BATCH_OWNER_ID>/Review-Management-System"
 25. Go to the dashboard and on left merge requests is there click that
-26.choose source option as master and click continue
-27.The finally submit
+26. Choose source option as master and click continue
+27. Then finally submit
+
+NOTE:
+Once you create merge request communicate within your team about it.
+You are expected to follow the merge acceptance or rejectance now and then
+If its pending Kindly ping the master of MAIN REPO TO do it so
+After mergeing with main repo following team have to sync again to get updated code
 
 
 ----------------------------------------------------------------------------------------------------
 
 ----------------------------------------------------------------------------------------------------
-
